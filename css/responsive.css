@@ -1,0 +1,166 @@
+/* Min-width a partir de tanta cantidad de px */
+/* Max-width desde tanta cantidad de px */
+
+@media (max-width:800px){
+    .header{
+        height: auto;
+    }
+    .grid{
+        gap: 30px;
+    }
+    .img__hero, .textos__hero{
+        grid-column: 1/-1;
+
+    }
+    .img__hero{
+        text-align: center;
+    }
+    .textos__hero{
+        margin-top: 40px;
+    }
+
+
+
+    .services{
+        height: auto;
+        margin-top: 100px;
+        padding: 50px;
+    }
+
+    .items{
+        height: auto;
+    }
+
+    .item{
+        width: 50%;
+        height: 200px;
+        margin: 10px;
+    }
+
+
+    .services__two{
+        height: 600px;
+    
+    }
+
+    .items__two{
+        height: 300px;
+    }
+    .item__two{
+        width: 50%;
+        height: 200px;
+        margin: 10px 50px ;
+    }
+}
+
+/* Para 320px */  
+@media only screen and (max-width: 430px) and (min-width: 5px){
+    .nav a{
+        font-size: 10px;
+    }
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .img{
+        max-width: 170px;
+    }
+    .textos__hero{
+        font-size: 12px;
+        text-align: left;
+        max-width: 300px;
+    }
+
+    .item{
+        width: 100%;
+        height: 100%;
+    }
+
+    .textos__about__us h2 p{
+        font-size: 13px;
+        max-width: 80%;
+    }
+
+
+    .numbers{
+        display: block;
+    }
+    .number h2{
+        font-size: 12px;
+        padding-bottom: 15px ;
+    }
+
+    .items__two{
+        height: 600px;
+    }
+    .item__two{
+        width: 100%;
+        height: 47%;
+    }
+
+
+    .footer .subtitulo{
+        padding-left: 50px;
+    }
+
+
+
+
+
+    /* Diseños */
+
+    .projects .subtitle{
+        font-size: 15px;
+    }
+    .projects__grid{
+        display: block;  
+    }
+
+
+
+
+    /* Sobre nosotros PAGINA */
+    
+    
+    .text__geografic{
+        /* grid-column: 1/7;
+        grid-row: 1/2; */
+        max-width: 250px;
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    .picture__geografic{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 200px;
+        height: auto;
+        max-width: 200px;
+        margin-bottom: 70px;
+    }
+    .text__pict{
+        width: 85%;
+    }
+
+
+
+    .text__geo{
+        /* grid-column: 1/7;
+        grid-row: 1/2; */
+        max-width: 250px;
+        text-align: left;
+    }
+
+    .picture__geo{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 200px;
+        max-width: 200px;
+        margin: 70px 0;
+    }
+    .text__pict-geo{
+        width: 85%
+    }
+    
+
+    
+} 
