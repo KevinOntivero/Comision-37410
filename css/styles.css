@@ -10,10 +10,10 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    background: #EECDA3;  
-    background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  
-    background: linear-gradient(to right, #EF629F, #EECDA3);
+    font-family: 'Poppins',sans-serif;
+    background: #fff;
+    background: -webkit-linear-gradient(to top, #000, #fff);
+    background: linear-gradient(to top, #000, #fff);
 
 }
 
@@ -30,6 +30,7 @@ body{
     overflow: hidden;
     align-items: center;
 }
+
 .weight__400{
     font-weight: 400;
 }
@@ -123,12 +124,6 @@ body{
 
 .services{
     height: 400px;
-    /* border: 2px solid white; */
-    border-top: 2px solid #EF629F;
-    background: #fff;  /* #EECDA3 */
-    background: -webkit-linear-gradient(to bottom, #000, #000);  /* #EF629F */  /* #EECDA3 */
-    background: linear-gradient(to bottom, #fff, #EF629F);
-    
 }
 
 .items{
@@ -161,9 +156,9 @@ body{
 .about__us{
     height: auto;
     color: #fff;
-    background: #000;
+    /* background: #000;
     background: -webkit-linear-gradient(to top, #000, #000);  
-    background: linear-gradient(to top, #000, #EF629F);
+    background: linear-gradient(to top, #000, #EF629F); */
     padding-bottom: 60px;
 }
 .textos__about__us{
@@ -192,9 +187,9 @@ body{
 
 .services__two{
     height: 400px;
-    /* border: 2px solid white; */
-    border-top: 2px solid black;
-    background: #000;  
+    
+    /* border-top: 2px solid black;
+    background: #000;   */
     
 }
 
@@ -227,7 +222,7 @@ body{
 
 footer{
     padding: 50px 0;
-    background: #000;
+    /* background: #000; */
     color: #fff;
     text-align: center;
 }
@@ -356,7 +351,11 @@ footer{
 
 .text__geografic{
     grid-column: 1/7;
-    padding: 100px 0;
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+   
+    
 }
 .text__geografic .subtitle{
     color: #fff;
@@ -383,6 +382,10 @@ footer{
 
 .text__geo{
     grid-column: 1/7;
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .text__geo .subtitle{
     color: #fff;
@@ -483,4 +486,10 @@ footer{
 
 .animate__animated.animate__zoomInDown{
      --animate-duration: 2s; 
+     color: #000;
+     margin-top: 20px;
+}
+
+.card{
+    margin: 80px;
 }
